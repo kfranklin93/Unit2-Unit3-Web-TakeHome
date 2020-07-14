@@ -6,12 +6,12 @@ The front end is set up with [Parcel Bundler](https://parceljs.org/), a library 
 
 The "quotes" API runs on port `3333` which needs to be free, or this server won't be able to start.
 
-- Clone the repo.
-- Navigate into the project folder.
-- Run `npm install` to download the project's dependencies.
-- Run `npm run api` to start the "quotes" API locally on `http://localhost:3333/api/quotes`.
-- Run `npm run react` to build the React project and serve it on `http://localhost:1234`.
-- Run `npm test` to run tests using Cypress (optional).
+1. Clone the repo.
+1. Navigate into the project folder.
+1. Run `npm install` to download the project's dependencies.
+1. Run `npm run api` to start the "quotes" API locally on `http://localhost:3333/api/quotes`.
+1. Run `npm run react` to build the React project and serve it on `http://localhost:1234`.
+1. Run `npm test` to run tests using Cypress (optional).
 
 ## Task A
 
