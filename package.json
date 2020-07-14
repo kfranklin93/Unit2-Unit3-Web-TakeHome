@@ -5,8 +5,7 @@
   "scripts": {
     "react": "parcel src/index.html",
     "api": "node server.js",
-    "test": "cypress open",
-    "start": "node server.js"
+    "test": "cypress open"
   },
   "keywords": [],
   "license": "ISC",
