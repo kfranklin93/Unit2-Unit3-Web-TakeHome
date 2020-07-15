@@ -10,20 +10,20 @@ The "quotes" API runs on port `3333` which needs to be free, or this server won'
 1. Navigate into the project folder.
 1. Run `npm install` to download the project's dependencies.
 1. Run `npm run api` to start the "quotes" API locally on `http://localhost:3333/api/quotes`.
-1. Run `npm run react` to build the React project and serve it on `http://localhost:1234`.
+1. Open a new terminal window at the same directory and run `npm run react` to build the React project and serve it on `http://localhost:1234`.
 1. Run `npm test` to run tests using Cypress (optional).
 
 ## Task A
 
 ### Task A Summary
 
-Complete eight callbacks so the React app is able to work like in [this video](https://youtu.be/IGB39rc4SZA).
+Complete eight tasks so the React app is able to work like in [this video](https://youtu.be/IGB39rc4SZA).
 
 ### Task A Instructions
 
-- Read `server.js` to understand how each endpoint works. Testing the API with [Postman](https://www.postman.com/downloads/) before starting to write code is highly recommended. The project has no database, so restarting the `api` script returns the quotes to their original state.
+- Read `server.js` to understand how each endpoint works. The project has no database, so restarting the `api` script returns the quotes to their original state.
 
-- There is a total of **eight callbacks** (tasks 1 through 8) that need to be completed. They are found inside the `Container.js` and `Form.js` components. Each callback includes a log statement with specific instructions. You can tackle the tasks in any order you wish. You do _not_ need to touch any code outside of these callbacks.
+- There is a total of **eight tasks** (tasks 1 through 8) that need to be completed. They are found inside the `Container.js` and `Form.js` components. Each tasks includes a log statement with specific instructions. You can tackle the tasks in any order you wish. You do _not_ need to touch any code outside of the tasks.
 
 ## Task B (optional)
 
