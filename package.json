@@ -26,10 +26,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LambdaSchool/Unit2-Unit3-Web-TakeHome.git"
+    "url": "git+https://github.com/BloomInstituteOfTechnology/Unit2-Unit3-Web-TakeHome.git"
   },
   "bugs": {
-    "url": "https://github.com/LambdaSchool/Unit2-Unit3-Web-TakeHome/issues"
+    "url": "https://github.com/BloomInstituteOfTechnology/Unit2-Unit3-Web-TakeHome/issues"
   },
-  "homepage": "https://github.com/LambdaSchool/Unit2-Unit3-Web-TakeHome#readme"
+  "homepage": "https://github.com/BloomInstituteOfTechnology/Unit2-Unit3-Web-TakeHome#readme"
 }
