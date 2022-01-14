@@ -36,10 +36,21 @@ export default function Container() {
   }
 
   const postQuote = ({ text, author }) => {
-    console.log(`TASK 2- Use 'axios' or 'fetch' to [POST] a new quote
-      in 'http://localhost:3333/api/quotes'. On success, the new quote
-      in the response body should be added to the 'quotes' slice of state.
-      On error, 'handleError' should be called. Finally, the form should be reset.`)
+    // console.log(`TASK 2- Use 'axios' or 'fetch' to [POST] a new quote
+    //   in 'http://localhost:3333/api/quotes'. On success, the new quote
+    //   in the response body should be added to the 'quotes' slice of state.
+    //   On error, 'handleError' should be called. Finally, the form should be reset.`)
+    let postQuoteUrl = 'http://localhost:3333/api/quotes';
+        axios.post(postQuoteUrl,{
+          author : author,
+          text : text,
+        })
+        .then( response =>{
+          setQuotes(response.data)
+        })
+        .catch(error =>{
+          handleError(error)
+        })
   }
 
   const putQuote = ({ id, text, author }) => {
