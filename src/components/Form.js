@@ -16,15 +16,23 @@ export default function Form(props) {
     //   reset the form to its original values.`)
 
     // postQuote({text:'test', author: 'me'});
-    preventDefault();
+    evt.preventDefault();
     reset();
   }
 
   const onSubmit = evt => {
-    console.log(`TASK 7- This should prevent the default behavior and
-      check whether 'values' contains a truthy id. If so, invoke the correct callback
-      to [PUT] an existing quote, otherwise invoke the correct callback
-      to [POST] a new quote.`)
+    // console.log(`TASK 7- This should prevent the default behavior and
+    //   check whether 'values' contains a truthy id. If so, invoke the correct callback
+    //   to [PUT] an existing quote, otherwise invoke the correct callback
+    //   to [POST] a new quote.`)
+    evt.preventDefault();
+    if(values.id){
+        // PUT quote
+        putQuote({...values})
+    } else {
+        // POST quote
+        postQuote({text : values.text, author: values.author})
+    }
   }
 
   const onChange = evt => {
