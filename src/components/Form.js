@@ -14,8 +14,10 @@ export default function Form(props) {
   const onCancel = evt => {
     // console.log(`TASK 6- This should prevent the default behavior and
     //   reset the form to its original values.`)
-    
+
     // postQuote({text:'test', author: 'me'});
+    preventDefault();
+    reset();
   }
 
   const onSubmit = evt => {
