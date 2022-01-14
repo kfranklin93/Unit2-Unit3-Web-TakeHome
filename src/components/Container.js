@@ -93,9 +93,11 @@ export default function Container() {
   ////////////// OTHER HELPERS //////////////
   ////////////// OTHER HELPERS //////////////
   const editQuote = (id) => {
-    console.log(`TASK 5- This helper should find inside 'quotes' the quote with the given 'id'.
-      Use the 'id', 'text' and 'author' properties of this quote to populate the corresponding
-      fields of the 'formValues' slice of state.`)
+    // console.log(`TASK 5- This helper should find inside 'quotes' the quote with the given 'id'.
+    //   Use the 'id', 'text' and 'author' properties of this quote to populate the corresponding
+    //   fields of the 'formValues' slice of state.`)
+    let quote = this.state.quotes.filter(quote=>quote.id===id);
+   
   }
 
   const handleError = err => { debugger } // eslint-disable-line
