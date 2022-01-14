@@ -17,7 +17,9 @@ export default function Form(props) {
 
     // postQuote({text:'test', author: 'me'});
     evt.preventDefault();
-    reset();
+    // reset();  NOT PASSING TEST
+    setValues({id:'',text : '', author: ''});
+
   }
 
   const onSubmit = evt => {
