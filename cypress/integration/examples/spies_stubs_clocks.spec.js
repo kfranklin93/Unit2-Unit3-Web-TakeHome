@@ -1,4 +1,4 @@
-dp/// <reference types="cypress" />
+// / <reference types="cypress" />
 // remove no check once Cypress.sinon is typed
 // https://github.com/cypress-io/cypress/issues/6720
 
