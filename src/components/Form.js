@@ -30,16 +30,20 @@ export default function Form(props) {
     evt.preventDefault();
     if(values.id){
         // PUT quote
-        putQuote({...values})
+        putQuote({...values});
     } else {
         // POST quote
-        postQuote({text : values.text, author: values.author})
+        postQuote({text : values.text, author: values.author});
     }
   }
 
   const onChange = evt => {
-    console.log(`TASK 8- Obtain 'name' and 'value' from the target of the event,
-      and utilize the correct callback to update the state of the form.`)
+    // console.log(`TASK 8- Obtain 'name' and 'value' from the target of the event,
+    //   and utilize the correct callback to update the state of the form.`)
+
+    let prevValues = values; 
+    prevValues[evt.target.name] = evt.target.value;
+    setValues({...prevValues});
   }
 
   ////////////// HELPER //////////////

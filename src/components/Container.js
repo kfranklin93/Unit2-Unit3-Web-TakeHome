@@ -31,7 +31,7 @@ export default function Container() {
           setQuotes(response.data);
         })
         .catch(error =>{
-          handleError(error)
+          handleError(error);
         })
   }
 
@@ -46,10 +46,11 @@ export default function Container() {
           text : text,
         })
         .then( response =>{
-          setQuotes(response.data)
+          setQuotes(getQuotes());
+          resetForm();
         })
         .catch(error =>{
-          handleError(error)
+          handleError(error);
         })
   }
 
@@ -65,10 +66,11 @@ export default function Container() {
         text : text,
       })
       .then( response =>{
-        setQuotes(response.data)
+        setQuotes(getQuotes());
+        resetForm();
       })
       .catch(error =>{
-        handleError(error)
+        handleError(error);
       })
 
   }
@@ -82,10 +84,11 @@ export default function Container() {
 
       axios.delete(deleteQuoteURL)
       .then( response =>{
-        setQuotes(response.data)
-      })
+        setQuotes(getQuotes());
+        resetForm();     
+       })
       .catch(error =>{
-        handleError(error)
+        handleError(error);
       })
   }
 
@@ -100,8 +103,9 @@ export default function Container() {
     // let quote = quotes.filter(quote=>quote.id===id);
     // return quote;
     let q = quotes.filter(quote => {
-      return quote.id ===id
+      return quote.id ===id;
     });
+    
     setFormValues(q[0]);
   }
 
@@ -119,7 +123,7 @@ export default function Container() {
       <h3>Quotes</h3>
       <ul>
         {
-          quotes.map((q, i) => (
+          quotes && quotes.map((q, i) => (
             <li key={q.id}>
               <div>{q.text} ({q.author})</div>
               <button onClick={() => editQuote(q.id)}>Edit</button>
